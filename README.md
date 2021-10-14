@@ -17,22 +17,35 @@ Its not an automated installater. There are no installation scripts. You still n
 You can also build the iso yourself but you need arch or an arch based distro for it to work.
 I have only tested this on vanila arch.
 1. Clone this repo
+  
   `git clone https://github.com/5iddy/EasyArch.git`
+
 2. CD into this repo folder
+  
   `cd EasyArch`
+
 3. Then initialise the flavor
+  
   `sh create_iso.sh init linux`
-              or
+                or
   `sh create_iso.sh init linux-nvidia`
 
 Note: before you initialise make sure you have archiso package installed.
+  
   `sudo pacman -S archiso`
+  
   or you can also run the above two init commands with sudo
+  
   `sudo sh create_iso.sh init linux`
+  
   however, I suggest you should preinstall archiso.
   
 4. Then build the iso 
+  
   `sudo sh create_iso.sh build`
+
 5. (Optional) Perform cleanup
+  
   `sh create_iso.sh cleanup`
+  
   If you installed archiso package with init command, you need to use sudo with cleanup as well.
